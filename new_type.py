@@ -1,9 +1,7 @@
-
-
 from typing import NewType, reveal_type
 
 
-UserId = NewType('UserId', int)  # Makes UserId a *subtype* of int, not an Alias
+UserId = NewType("UserId", int)  # Makes UserId a *subtype* of int, not an Alias
 
 
 def get_user_name(user_id: UserId) -> str:

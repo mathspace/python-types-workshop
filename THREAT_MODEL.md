@@ -58,4 +58,6 @@ These are prioritized threat hypotheses, not validated findings. A scenario requ
 Architecture confidence is limited to inspected source and the pinned inventory. Live permission settings, external services and actual downstream adoption were not tested. Architecture mapping is not completed security-audit coverage. Material claims were reconciled before publication.
 
 Repository: github.com/mathspace/python-types-workshop
-Version: e32a96611c83644184eb3e4855dafb924df20362
+Baseline assessment: e32a96611c83644184eb3e4855dafb924df20362. The eMudhra mitigation below describes this PR.
+
+Python dependency operations require uv 0.13.4 or newer to exclude compromised eMudhra trust. Where certifi is locked, require 2026.10.19 or newer. Recreate environments and rebuild/restart consumers after updating; system and custom CA stores remain separate.
